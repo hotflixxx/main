@@ -1,0 +1,111 @@
+:root {
+    --color-main: red;
+    --color-sec: blue;
+}
+
+body {
+    background-color: black;
+    margin: 35px;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: var(--color-main);
+}
+
+nav {
+    background-color: black;
+    align-content: center;
+}
+
+nav img {
+    padding: 25px;
+}
+
+nav button {
+    background-color: black;
+}
+
+.container-login {
+    float: right;
+}
+
+.container-login img {
+    height: 80px;
+}
+
+.container-welcome {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-videos {
+    margin: 25px;
+}
+
+.video-preview h2 {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --color-main: blue;
+        /* Cambia el color principal a azul */
+        --color-sec: red;
+        /* Cambia el color secundario a rojo */
+    }
+
+    body {
+        font-size: 14px;
+        /* Reduce el tamaño de fuente */
+    }
+
+    header {
+        font-size: 1.5em;
+        /* Reduce el tamaño del texto del encabezado */
+    }
+
+    nav img {
+        padding: 5px;
+        /* Reduce el espacio alrededor de las imágenes de navegación */
+    }
+
+    .container-welcome {
+        padding: 10px;
+        /* Añade un poco de espacio alrededor del contenido del contenedor de bienvenida */
+    }
+
+    .container-videos {
+        margin: 10px;
+        /* Reduce el margen alrededor de los contenedores de videos */
+    }
+
+    .video-preview h2 {
+        font-size: 1em;
+        /* Reduce el tamaño del texto del título de video */
+    }
+}
+
+/* Estilos adicionales para dispositivos con un ancho máximo de 480px (como celulares pequeños) */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+        /* Reduce aún más el tamaño de fuente */
+    }
+
+    .container-welcome {
+        padding: 5px;
+        /* Reduce aún más el espacio alrededor del contenido del contenedor de bienvenida */
+    }
+
+    .container-videos {
+        margin: 5px;
+        /* Reduce aún más el margen alrededor de los contenedores de videos */
+    }
+}
