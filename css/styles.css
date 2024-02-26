@@ -1,8 +1,3 @@
-:root {
-    --color-main: red;
-    --color-sec: blue;
-}
-
 body {
     background-color: black;
     margin: 35px;
@@ -20,19 +15,10 @@ nav {
 }
 
 nav img {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
     padding: 10px;
-}
-
-nav button {
-    background-color: black;
-}
-
-.container-login {
-    float: right;
-}
-
-.container-login img {
-    height: 80px;
 }
 
 .container-welcome {
@@ -53,3 +39,20 @@ section {
     color: white;
 }
 
+.ad-container {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: #f0f0f0;
+    z-index: 9999;
+}
+
+.left-ad {
+    top: 0;
+    left: 0;
+}
+
+.right-ad {
+    top: 0;
+    right: 0;
+}
