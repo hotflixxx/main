@@ -12,10 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 const iframe = document.createElement("iframe");
                 iframe.src = video.src;
                 iframe.frameborder = 0;
-                iframe.width = 560;
                 iframe.height = 315;
                 iframe.scrolling = "no";
                 iframe.allowfullscreen = true;
+
+                // Calcula el ancho del iframe en función del ancho de la pantalla
+                const screenWidth = window.innerWidth || document.documentElement.clientWidth;
+                const maxWidth = Math.min(560, screenWidth); // Limita el ancho máximo a 560px
+                iframe.width = maxWidth;
 
                 // Crea un contenedor para el video y añádelo al DOM
                 const container = document.createElement("div");
